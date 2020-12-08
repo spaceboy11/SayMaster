@@ -841,11 +841,11 @@ init();
 
 
 def micro():
-    file_iptxt = open("webcam/ip.txt","w")
+    file_iptxt = open("microphone/ip.txt","w")
     file_iptxt.write("")
     file_iptxt.close()
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
-    file_recv = open("webcam/Log.log","w")
+    file_recv = open("microphone/Log.log","w")
     file_recv.write("")
     file_recv.close()
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
