@@ -17,6 +17,10 @@ apt install python3
 clear
 echo "----------------------------------------------"
 echo ""
+apt install php
+clear
+echo "----------------------------------------------"
+echo ""
 
 sleep 4
 clear
