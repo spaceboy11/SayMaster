@@ -30,7 +30,7 @@ def webcham():
       [2] Mobile Camera
       [3] Avatar X-Men \n""")
       print(template_list)
-      print(Fore.RED+" [!] "+Fore.GREEN+"Place Enter The Template\n")
+      print(Fore.RED+" [!] "+Fore.GREEN+"Please Enter The Template\n")
 
       input1 = input(Fore.RED+" ┌─["+Fore.LIGHTGREEN_EX+"SAY-MASTER"+Fore.BLUE+"~"+Fore.WHITE+"@HOME"+Fore.RED+"/"+Fore.BLUE+"Select-Template"+Fore.RED+"""]
  └──╼ """+Fore.WHITE+"₿ ")
