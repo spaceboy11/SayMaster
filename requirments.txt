@@ -1,4 +1,4 @@
-pyngrok==2.1.7
+pyngrok
 colorama
 requests
 neofetch-win
